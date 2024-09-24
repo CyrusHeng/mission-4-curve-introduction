@@ -1,0 +1,8 @@
+function three_quarters_2(pt) {
+    // your answer here
+    return t=> make_point(math_cos(0.75 * 2 * math_PI * t) + x_of(pt),
+                            math_sin(0.75 * 2 * math_PI * t) + y_of(pt));
+}
+
+// Test
+draw_connected_2d(200)(three_quarters_2(make_point(0.5, 0.25)));
